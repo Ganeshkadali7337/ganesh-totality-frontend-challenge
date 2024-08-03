@@ -1,0 +1,164 @@
+.list-item-container {
+  max-width: 250px;
+  margin: 8px;
+  margin-bottom: 30px;
+}
+
+.cart-list {
+  border: 1px solid black;
+}
+
+.cart-padd {
+  padding: 10px;
+}
+
+.property-img {
+  max-width: 250px;
+}
+
+.hide {
+  display: none;
+}
+
+.property-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #3e24eb;
+  border: none;
+  background: none;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.property-content {
+  padding: 3px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+.property-para {
+  font-size: 12px;
+  color: #888792;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.location {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.price {
+  font-size: 14px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+}
+
+.heart-filled {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+.booknow-btn {
+  width: 100%;
+  height: 35px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .list-item-container {
+    max-width: 300px;
+    margin: 12px;
+    margin-bottom: 38px;
+  }
+  .property-img {
+    max-width: 300px;
+  }
+  .property-name {
+    font-size: 16px;
+  }
+  .property-para {
+    font-size: 13px;
+  }
+  .heart {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .location {
+    font-size: 15px;
+    gap: 6px;
+  }
+  .book-btn {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .list-item-container {
+    max-width: 300px;
+    margin: 16px;
+    margin-bottom: 45px;
+  }
+  .property-img {
+    max-width: 300px;
+  }
+  .property-name {
+    font-size: 18px;
+  }
+  .property-para {
+    font-size: 14px;
+  }
+  .heart {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 16px;
+    gap: 7px;
+  }
+}

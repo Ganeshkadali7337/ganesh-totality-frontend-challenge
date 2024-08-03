@@ -1,0 +1,159 @@
+.cart-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cart-content-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  height: 120px;
+  margin-bottom: 18px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.cart-row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.date {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.cart-details {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.inc-btn {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.cart-property-name {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: 90%;
+}
+
+.cart-item-price {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.increment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.delete {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.count {
+  font-size: 12px;
+}
+
+.cart-book-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #3e24eb;
+  border: none;
+  background: none;
+  gap: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media (max-width: 330px) {
+  .cart-img {
+    height: 100px;
+    width: 90px;
+  }
+  .cart-content-main {
+    height: 100px;
+  }
+  .cart-property-name {
+    font-size: 11px;
+  }
+  .cart-item-price {
+    font-size: 10px;
+  }
+  .date {
+    font-size: 10px;
+  }
+  .inc-btn {
+    height: 12px;
+    width: 10px;
+    gap: 3px;
+  }
+  .cart-book-btn {
+    font-size: 10px;
+  }
+  .delete {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart-img {
+    height: 130px;
+    width: 130px;
+  }
+  .cart-content-main {
+    height: 130px;
+  }
+  .cart-property-name {
+    font-size: 15px;
+  }
+  .cart-item-price {
+    font-size: 13px;
+  }
+  .date {
+    font-size: 13px;
+  }
+  .inc-btn {
+    height: 22px;
+    width: 22px;
+    gap: 10px;
+  }
+  .cart-book-btn {
+    font-size: 14px;
+  }
+  .delete {
+    font-size: 18px;
+  }
+}

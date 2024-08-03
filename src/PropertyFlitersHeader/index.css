@@ -1,0 +1,86 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-top: 0.6px solid lightgray;
+  border-bottom: 0.6px solid lightgray;
+}
+
+.large-screen-filter-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.select-el {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: white;
+}
+
+.drop-down-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-screen-filter-btn {
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+  margin-left: 20px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.small-screen-filter-btn {
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.arrow {
+  color: black;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.small-screen-filter-btn-container {
+  width: 50%;
+  border-right: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .small-screen-filter-btn-container {
+    display: none;
+  }
+  .large-screen-filter-btn-container {
+    display: flex;
+  }
+  .drop-down-container {
+    justify-content: flex-end;
+  }
+  .select-el {
+    font-size: 15px;
+  }
+}

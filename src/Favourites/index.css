@@ -1,0 +1,21 @@
+.fav-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.fav-head {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .fav-head {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fav-head {
+    font-size: 24px;
+  }
+}
