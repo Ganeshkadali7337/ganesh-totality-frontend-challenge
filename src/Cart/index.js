@@ -8,7 +8,7 @@ import CartContext from "../CartContext";
 
 import "./index.css";
 
-const Cart = () => {
+const Cart = (props) => {
   const { cartStateData } = useContext(CartContext);
   let totalCost = 0;
 
@@ -21,6 +21,11 @@ const Cart = () => {
   cartStateData.forEach((each) => {
     bookingCount = bookingCount + each.booking_count;
   });
+
+  const onClickCheckout = () => {
+    const { history } = props;
+    history.push("/checkout");
+  };
 
   return (
     <div className="cart-main">
@@ -36,9 +41,11 @@ const Cart = () => {
           <div className="count-cont">
             <div>
               <p className="check-count">Count: {bookingCount}</p>
-              <p className="check-count">Total Cost: {totalCost}</p>
+              <p className="check-count">Total Cost: {totalCost}/Month</p>
             </div>
-            <button className="check-btn">Checkout</button>
+            <button onClick={onClickCheckout} className="check-btn">
+              Checkout
+            </button>
           </div>
         </div>
       </div>

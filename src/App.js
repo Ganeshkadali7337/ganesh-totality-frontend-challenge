@@ -14,6 +14,8 @@ import CartContext from "./CartContext";
 
 import PropertyData from "./propertyData";
 
+import Checkout from "./Checkout";
+
 import "./App.css";
 
 class App extends Component {
@@ -263,6 +265,7 @@ class App extends Component {
             <Route path="/property-details/:id" component={PropertyDetails} />
             <Route path="/favourites" component={Favourites} />
             <Route path="/cart" component={Cart} />
+            <Route path="/checkout" component={Checkout} />
           </Switch>
         </Router>
       </CartContext.Provider>

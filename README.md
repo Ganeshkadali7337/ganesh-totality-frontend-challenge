@@ -1,6 +1,56 @@
-# Getting Started with Create React App
+# Rental Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based rental application for browsing, liking, booking, and managing properties. The application includes features like filtering properties by amenities, sorting by price, and managing a cart for booked properties.
+
+## Features
+
+- **Property Listings**: Browse through a list of available rental properties.
+- **Like and Favorite**: Like properties to add them to your favorites.
+- **Book Properties**: Add properties to your cart for booking.
+- **Property Details**: View detailed information about each property.
+- **Favorites Section**: View and manage your liked properties.
+- **Cart Management**: View, increment, decrement, remove, and manage booked properties in your cart.
+- **Checkout Process**: Enter booking details, including contact information and payment details.
+- **Filtering**: Filter properties by amenities (Gym, AC, Parking, WiFi).
+- **Sorting**: Sort properties by price (High to Low, Low to High).
+
+## Components
+
+### PropertyList
+
+- Displays a list of rental properties with options to like, book, and view more details.
+
+### PropertyDetails
+
+- Displays detailed information about a selected property.
+
+### Favorites
+
+- Displays a list of liked properties.
+
+### Cart
+
+- Displays booked properties with options to increment, decrement, remove, and manage items. Includes a checkout button to proceed
+  to the checkout process.
+
+### Checkout
+
+- Allows users to enter booking details and review the total cost.
+
+### Header
+
+- Contains navigation links to the home page, favorites section, and cart section.
+
+### Filters
+
+Allows users to filter properties by amenities and sort them by price.
+
+## Context
+
+### CartContext
+
+- - Manages the state for liked properties, booked properties, and provides functions to toggle likes, add properties to the cart,
+    remove properties from the cart, and calculate the total cost.
 
 ## Available Scripts
 
