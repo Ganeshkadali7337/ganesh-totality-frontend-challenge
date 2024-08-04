@@ -9,6 +9,8 @@ const PropertyFiltersHeader = (props) => {
   const { filterShow, onClickFilters, value, changePrice, productsCount } =
     useContext(CartContext);
 
+  const { count } = props;
+
   const clickFilters = () => {
     onClickFilters();
   };
@@ -27,7 +29,7 @@ const PropertyFiltersHeader = (props) => {
   return (
     <div className="filter-container">
       <div className="large-screen-filter-btn-container">
-        <p className="count">{productsCount} ITEMS</p>
+        <p className="count">{count} ITEMS</p>
         <button onClick={clickFilters} className="large-screen-filter-btn">
           {arrow}
           {filterText}

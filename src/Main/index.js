@@ -67,7 +67,7 @@ const Main = () => {
           </p>
         </div>
         <div className="properties-main-list-container">
-          <PropertyFiltersHeader />
+          <PropertyFiltersHeader count={sortedpropertyData.length} />
         </div>
         <div className="properties-and-filters-container">
           {filterShow && (
